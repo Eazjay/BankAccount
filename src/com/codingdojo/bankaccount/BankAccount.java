@@ -29,11 +29,11 @@ public class BankAccount {
 	public void depositMoney(Double amount, String accountType) {
 		if (accountType.equals("checking")) {
 			this.setCheckingAccount(this.getCheckingAccount() + amount);
-			System.out.println(" \n $" + amount + " was deposited into your checking account. Your balance is: " + this.getCheckingAccount());
+			System.out.println("$" + amount + " was deposited into your checking account. Your balance is: " + this.getCheckingAccount());
 		} 
 		else if (accountType.equals("savings")) {
 			this.setCheckingAccount(this.getCheckingAccount() + amount);
-			System.out.println(" \n $" + amount + " was deposited into your savings account. Your balance is: " + this.getCheckingAccount());
+			System.out.println("$" + amount + " was deposited into your savings account. Your balance is: " + this.getCheckingAccount());
 		}
 
 	}
@@ -46,19 +46,19 @@ public class BankAccount {
 		if (accountType.equals("checking")) {
 			if (this.getCheckingAccount() != 0.0) {
 				this.setCheckingAccount(this.getCheckingAccount() - amount);
-				System.out.println(" \n $" + amount + " was withrawn from your checking account. Your balance is: " + this.getCheckingAccount());
+				System.out.println("$" + amount + " was withrawn from your checking account. Your balance is: " + this.getCheckingAccount());
 			}
 			else {
-				System.out.println(" \n Insufficient funds.");
+				System.out.println("Insufficient funds.");
 			}
 		}
 		else if (accountType.equals("savings")) {
 			if (this.getCheckingAccount() != 0.0) {
 				this.setCheckingAccount(this.getCheckingAccount() - amount);
-				System.out.println(" \n $" + amount + " was withdrawn from your savings account. Your balance is: " + this.getCheckingAccount());
+				System.out.println("$" + amount + " was withdrawn from your savings account. Your balance is: " + this.getCheckingAccount());
 			}
 			else {
-				System.out.println(" \n Insufficient funds.");
+				System.out.println("Insufficient funds.");
 			}
 		}
 

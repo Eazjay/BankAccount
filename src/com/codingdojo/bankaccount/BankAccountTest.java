@@ -20,7 +20,7 @@ public class BankAccountTest {
 		acct4.withdrawMoney(100.0, "checking");
 		
 		
-		System.out.println(" \n We have " + BankAccount.getNumberOfAccounts() + " bank accounts so far.");
+		System.out.println("We have " + BankAccount.getNumberOfAccounts() + " bank accounts so far.");
 		
 		
 	}
